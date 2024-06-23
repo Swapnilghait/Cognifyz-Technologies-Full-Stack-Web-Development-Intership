@@ -1,0 +1,50 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.card p {
+    margin: 5px 0;
+}
+
+.card p strong {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+/* Add purplish tint overlay */
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 0, 128, 0.2); /* Purplish tint color */
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show overlay on hover */
+.card:hover::before {
+    opacity: 1;
+}
+
+/* Additional styles for the h2 heading */
+.feedback-collections h2 {
+    color: #800080; /* Purple color for the heading */
+    margin-bottom: 20px;
+}

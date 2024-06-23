@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressia</title>
+    <style>
+        /* Default styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+#logo {
+    display: block;
+    margin: 10px auto;
+    width: 200px; /* Adjust size as needed */
+}
+
+#heading {
+    color: #0056b3;
+    text-align: center;
+}
+
+form {
+
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    scroll-behavior: smooth;
+    padding: 40px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type= "password"]{
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    box-sizing: border-box;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: navy;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px; /* Adjust font size as needed */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+    border-radius: 30px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 480px) {
+    form {
+        width: 80%;
+    }
+
+    form label,
+    form input[type="text"],
+    form input[type="email"],
+    form input[type="number"],
+    form input[type="date"],
+    button[type="submit"] {
+        font-size: 14px;
+    }
+}
+    </style>
+
+</head>
+<body>
+    
+    <h1 id="heading">Cognifyz Login</h1>
+    <form id="registrationForm" action="http://localhost:8000/api/v1/users/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

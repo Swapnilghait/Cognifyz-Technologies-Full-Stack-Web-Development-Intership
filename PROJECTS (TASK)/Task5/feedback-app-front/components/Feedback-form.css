@@ -1,0 +1,92 @@
+.feedback-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.feedback-form-container form {
+    margin-right: 20px;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-image {
+    max-width: 150px;
+}
+
+.feedback-form-container input,
+.feedback-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.feedback-form-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.feedback-form-container button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.submitted-message,
+.error-message {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.submitted-message {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.submitted-message p {
+    margin: 0;
+    color: #155724;
+}
+
+.submitted-message button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #155724;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.error-message {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.error-message p {
+    margin: 0;
+    color: #721c24;
+}
+
+.error-message button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #721c24;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
